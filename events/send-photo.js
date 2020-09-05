@@ -5,7 +5,7 @@ function randomInteger(min, max) {
   return Math.floor(min + Math.random() * (max - min));
 }
 
-const hearManager = new HearManager()
+const hearManager = new HearManager();
 hearManager.hear('Фото', async (context) => {
   await context.send('Отправка самой крутой эмо фотки...');
   try {
